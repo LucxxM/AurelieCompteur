@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="toggle">
+        <input type="checkbox" class="checkbox" id="dark-mode" />
+        <label for="dark-mode" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+      <div id="confetti" class='hoverme'> 
+        Si Confetti Compteur Fini!!!
+      </div>
+
+      <div id="sectionHome" class="home-section">
+        <div id="div1" class="box-actes">
+          <h2>Appels</h2>
+          <input type="hidden" value="0" aria-valuemax="26" class="input" id="inputOne"></input>
+          <div class="count-box" id="count-one">0</div>
+          <button class="btn">Ajouter un acte</button>
+        </div>
+        <div class="box-actes">
+            <h2>Gestion</h2>
+            <input type="hidden" value="0" aria-valuemax="10" class="input" id="inputTwo"></input>
+            <div class="count-box" id="count-two">0</div>
+            <button class="btn">Ajouter un acte</button>
+        </div>
+        
+      </div>
+      <button class="btn2" onclick="addElement()">Ajouter un compteur</button>
+      <script src="script.js"></script>
+</body>
+</html>
