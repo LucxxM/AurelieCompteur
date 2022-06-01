@@ -54,17 +54,17 @@ body {
  /* DARK MODE */
  .dark {
    /* background: rgb(11, 206, 11); */
-   background: #16a5e7;
+   background: #16e727;
  }
  .dark main {
-   background: #16a5e7;
+   background: #16e727;
  }
  .dark .label {
-   box-shadow: 2px 1px 1px #16a5e7;
+   box-shadow: 2px 1px 1px #16e727;
    background: #888;
  }
  .dark .ball {
-   background: #16a5e7;
+   background: #16e727;
  }
 
 .home-section{
@@ -120,6 +120,7 @@ body {
 }
 .hoverme {
   width: 240px;
+  color: rgb(255, 255, 255);
   margin:150px auto 0;
   text-align: center;
   padding: 10px 0;
