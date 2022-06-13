@@ -54,17 +54,21 @@ body {
  /* DARK MODE */
  .dark {
    /* background: rgb(11, 206, 11); */
-   background: #16e727;
+   background: rgb(219, 65, 173);
  }
  .dark main {
-   background: #16e727;
+   background: rgb(219, 65, 173);
  }
  .dark .label {
-   box-shadow: 2px 1px 1px #16e727;
+   box-shadow: 2px 1px 1px rgb(219, 65, 173);
    background: #888;
  }
  .dark .ball {
-   background: #16e727;
+   background: rgb(219, 65, 173);
+ }
+
+ .dark .box-actes{
+    background: #333;
  }
 
 .home-section{
@@ -85,6 +89,7 @@ body {
   flex-direction: column;
   background-color: rgb(219, 65, 173);
   align-items: center;
+  border-radius: 50px;
 }
 
 .count-box{

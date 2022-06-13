@@ -14,16 +14,21 @@ function syncDelay(milliseconds){
 }
 
 
+let id = 0; 
 function addElement () {
-  
   const newParent = document.getElementById('sectionHome');
-
+  
   var newDiv = document.createElement("div");
   newDiv.classList.add('box-actes');
 
   
   var newH2 = document.createElement("h2");
-  newH2.textContent = prompt('choissez un nom')
+  newH2.textContent = prompt('choissez un nom');
+  if (newH2.textContent == ''){
+    id++;
+    newH2.textContent = 'Compteur : ' + id ;
+    alert('Vous n\'avez pas choisi de nom, vous avez donc un compteur par défaut');
+  }
   newDiv.appendChild(newH2);
   
   var newInput = document.createElement("input");
@@ -31,7 +36,14 @@ function addElement () {
   newInput.type = 'hidden';
   newInput.value = 0;
   newInput.ariaValueMax = prompt('choisir un nombre à atteindre');
+
+  if (newInput.ariaValueMax == ''){
+    newInput.ariaValueMax = 10;
+    alert('nombre à atteindre par défaut: 10');
+  }
   newDiv.appendChild(newInput);
+
+  
   
   var newDiv2 = document.createElement('div');
   newDiv2.classList.add('count-box');
@@ -44,6 +56,11 @@ function addElement () {
   newBtn.textContent = 'Ajouter un acte';
   newBtn.click = 'onClickBtn()';
   newDiv.appendChild(newBtn);
+
+  const newP = document.createElement('p');
+  newP.innerText = 'nombre à atteindre ' + newInput.ariaValueMax;
+
+  newDiv.appendChild(newP);
   
   newParent.prepend(newDiv);
   
