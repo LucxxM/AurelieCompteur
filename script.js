@@ -27,7 +27,7 @@ function addElement () {
   if (newH2.textContent == ''){
     id++;
     newH2.textContent = 'Compteur : ' + id ;
-    alert('Vous n\'avez pas choisi de nom, vous avez donc un compteur par défaut');
+    alert(`Vous n'avez pas choisi de nom, vous avez donc un compteur par défaut`);
   }
   newDiv.appendChild(newH2);
   

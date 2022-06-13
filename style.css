@@ -11,6 +11,24 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  width: 20px; /* width of the entire scrollbar */
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: rgb(28, 32, 32);
+  box-shadow: inset 0 0 6px rgb(219, 65, 173);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(219, 65, 173);
+  border: 1px solid black;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.37);
+}
+
 .toggle {
   position: absolute;
   right: 2rem;
