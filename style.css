@@ -29,6 +29,24 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.37);
 }
 
+body.dark::-webkit-scrollbar {
+  width: 20px; /* width of the entire scrollbar */
+  background-color: black;
+}
+
+body.dark::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: rgb(28, 32, 32);
+  box-shadow: inset 0 0 6px rgb(78, 219, 65);
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(78, 219, 65);
+  border: 1px solid black;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.37);
+}
+
 .toggle {
   position: absolute;
   right: 2rem;
@@ -72,17 +90,17 @@ body::-webkit-scrollbar-thumb {
  /* DARK MODE */
  .dark {
    /* background: rgb(11, 206, 11); */
-   background: rgb(219, 65, 173);
+   background: rgb(78, 219, 65);
  }
  .dark main {
-   background: rgb(219, 65, 173);
+   background: rgb(78, 219, 65);
  }
  .dark .label {
-   box-shadow: 2px 1px 1px rgb(219, 65, 173);
+   box-shadow: 2px 1px 1px rgb(78, 219, 65);
    background: #888;
  }
  .dark .ball {
-   background: rgb(219, 65, 173);
+   background: rgb(78, 219, 65);
  }
 
  .dark .box-actes{

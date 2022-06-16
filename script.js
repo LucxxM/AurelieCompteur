@@ -80,6 +80,10 @@ function onClickBtn(e){
   var countShow = this.previousElementSibling;
   var count = this.previousElementSibling.previousElementSibling.value;
   var maxCount = this.previousElementSibling.previousElementSibling.ariaValueMax;
+  var valueMaxDiv = this.nextElementSibling;
+  var valueToInsert = maxCount - parseInt(count);
+  console.log(maxCount - parseInt(count));
+  valueMaxDiv.textContent = "Nombre restant : " + valueToInsert;
   e.preventDefault();
   countShow.textContent = count;
 
